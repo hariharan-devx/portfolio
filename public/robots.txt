@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hariharan-devx.github.io/portfolio/sitemap.xml
