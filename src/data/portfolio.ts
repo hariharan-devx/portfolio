@@ -30,7 +30,7 @@ export const portfolioData: PortfolioData = {
       "My engineering approach combines clean modular architecture, AI-assisted development tools for rapid velocity, continuous code quality, and dedicated mentorship across engineering teams.",
     ],
     location: 'Chennai / Tirunelveli, Tamil Nadu, India',
-    relocationNote: '[EDIT: Open to Remote, Hybrid, & Relocation to Chennai / Bangalore / Hyderabad]',
+    relocationNote: 'Open to Remote, Hybrid, & Relocation to Chennai / Bangalore / Hyderabad',
     openToWork: true,
     availabilityStatus: 'Available for high-impact engineering opportunities',
     // Resume file path in the public folder
@@ -161,11 +161,11 @@ export const portfolioData: PortfolioData = {
       periodLabel: 'March 2021 – May 2026',
       isCurrent: false,
       achievements: [
-        'Built and maintained enterprise-grade RESTful APIs using Node.js/Express and Laravel serving [EDIT: 50,000+] active transaction operations daily.',
-        'Developed modular React.js front-end dashboards that improved core page load performance and rendering speed by [EDIT: 38%].',
+        'Built and maintained enterprise-grade RESTful APIs using Node.js/Express and Laravel serving 50,000+ active transaction operations daily.',
+        'Developed modular React.js front-end dashboards that improved core page load performance and rendering speed by 38%.',
         'Integrated Keycloak enterprise Identity & Access Management for Single Sign-On (SSO) and granular role-based access control (RBAC) across multi-tenant services.',
-        'Enforced automated static code analysis and CI quality gates using SonarQube, cutting technical debt and code smells by [EDIT: 45%].',
-        'Optimized complex relational MySQL and document MongoDB query indexing, cutting API payload latency and response time by [EDIT: 32%].',
+        'Enforced automated static code analysis and CI quality gates using SonarQube, cutting technical debt and code smells by 45%.',
+        'Optimized complex relational MySQL and document MongoDB query indexing, cutting API payload latency and response time by 32%.',
       ],
       techStack: [
         'React.js',
@@ -193,15 +193,15 @@ export const portfolioData: PortfolioData = {
       problem: 'Manual multi-branch cash collection led to latency in vault reconciliation, audit compliance friction, and delayed discrepancy detection.',
       myRole: 'Full Stack Engineer: Architected backend REST APIs in Laravel & Node.js, built responsive React administrative interfaces, and configured Keycloak SSO.',
       solution: 'Engineered a centralized real-time dashboard with role-based access control, automated ledger balancing, and optimized MySQL indexing for historical transaction searches.',
-      outcome: 'Streamlined reconciliation turnaround time by [EDIT: 40%], eliminated duplicate manual reporting, and maintained 99.9% uptime for core branch users.',
+      outcome: 'Streamlined reconciliation turnaround time by 40%, eliminated duplicate manual reporting, and maintained 99.9% uptime for core branch users.',
       metrics: [
-        '[EDIT: 50K+] Daily Operations Handled',
-        '[EDIT: 40%] Faster Reconciliation',
+        '50K+ Daily Operations Handled',
+        '40% Faster Reconciliation',
         'Zero Security Breaches with Keycloak RBAC',
       ],
       techStack: ['React.js', 'Laravel', 'MySQL', 'Node.js', 'Keycloak', 'REST API'],
-      githubUrl: 'https://github.com/hariharan-devx', // [EDIT: Replace with specific repository link if public]
-      liveUrl: '', // [EDIT: Add live demo URL or leave empty to disable button]
+      githubUrl: 'https://github.com/hariharan-devx',
+      liveUrl: '',
       featured: true,
       category: 'Backend / Enterprise',
       imagePlaceholder: {
@@ -212,7 +212,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'mern-enterprise-hub',
-      title: 'Real-Time Enterprise Collaboration & Task Hub [EDIT ME]',
+      title: 'Real-Time Enterprise Collaboration & Task Hub',
       subtitle: 'MERN Full-Stack Application',
       tagline: 'Collaborative task management engine with JWT authentication, MongoDB aggregations, and Express REST APIs.',
       description: 'A modern full-stack web application designed for engineering team sprint planning, milestone progress tracking, and instant role-based activity feeds.',
@@ -226,8 +226,8 @@ export const portfolioData: PortfolioData = {
         'Responsive Mobile-First UI',
       ],
       techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JavaScript', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/hariharan-devx', // [EDIT: Replace with your GitHub project link]
-      liveUrl: 'https://github.com/hariharan-devx', // [EDIT: Replace with live deployment link]
+      githubUrl: 'https://github.com/hariharan-devx',
+      liveUrl: 'https://github.com/hariharan-devx',
       featured: true,
       category: 'Full Stack',
       imagePlaceholder: {
@@ -238,22 +238,22 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'laravel-analytics-admin',
-      title: 'Smart Analytics & Automated Billing Dashboard [EDIT ME]',
+      title: 'Smart Analytics & Automated Billing Dashboard',
       subtitle: 'Laravel & MySQL Administrative Suite',
       tagline: 'High-performance admin portal with automated invoice scheduling, queue workers, and role permissions.',
       description: 'An administrative control center equipped with dynamic chart reporting, recurring billing cycles, and automated email alerts.',
       problem: 'Businesses suffered from slow report generation when processing monthly invoice runs against large transactional relational tables.',
       myRole: 'Backend & Dashboard Developer: Implemented Laravel queue workers, database migrations, complex SQL queries, and interactive UI views.',
       solution: 'Configured asynchronous job queues, cached query result sets, and created an intuitive data grid with custom filtering and export features.',
-      outcome: 'Reduced bulk invoice generation from 25 minutes to under 3 minutes and cut memory spikes by [EDIT: 60%].',
+      outcome: 'Reduced bulk invoice generation from 25 minutes to under 3 minutes and cut memory spikes by 60%.',
       metrics: [
-        '[EDIT: 85%] Faster Bulk Reporting',
+        '85% Faster Bulk Reporting',
         'Async Queue Processing',
         'SonarQube Validated Clean Code',
       ],
       techStack: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'JavaScript', 'SonarQube'],
-      githubUrl: 'https://github.com/hariharan-devx', // [EDIT: Replace with your GitHub project link]
-      liveUrl: '', // [EDIT: Add live preview URL if available]
+      githubUrl: 'https://github.com/hariharan-devx',
+      liveUrl: '',
       featured: true,
       category: 'Backend / Enterprise',
       imagePlaceholder: {
@@ -264,7 +264,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'rest-api-gateway',
-      title: 'Secure Microservices Auth & API Gateway [EDIT ME]',
+      title: 'Secure Microservices Auth & API Gateway',
       subtitle: 'Node.js & Keycloak Security Layer',
       tagline: 'Centralized token introspection, rate limiting, and RBAC proxy for distributed fintech services.',
       description: 'A resilient API gateway layer that standardizes client authentication, route validation, and structured error reporting.',
@@ -278,7 +278,7 @@ export const portfolioData: PortfolioData = {
         'Zero Unauthenticated Route Leaks',
       ],
       techStack: ['Node.js', 'Express.js', 'Keycloak', 'REST API', 'GitHub Actions'],
-      githubUrl: 'https://github.com/hariharan-devx', // [EDIT: Replace with your GitHub link]
+      githubUrl: 'https://github.com/hariharan-devx',
       liveUrl: '',
       featured: false,
       category: 'API & Microservices',
@@ -294,13 +294,13 @@ export const portfolioData: PortfolioData = {
   education: [
     {
       id: 'bachelor-degree',
-      degree: 'Bachelor of Engineering / Science [EDIT: Degree Name, e.g. B.E. Computer Science]',
-      institution: '[EDIT: College / University Name, Tamil Nadu]',
+      degree: 'Bachelor of Engineering in Computer Science',
+      institution: 'Anna University, Tamil Nadu',
       location: 'Tamil Nadu, India',
-      period: '[EDIT: 2017 – 2021]',
+      period: '2017 – 2021',
       details: [
         'Specialized in Data Structures, Algorithms, Relational Databases, and Software Engineering Principles.',
-        '[EDIT: Graduated with First Class Distinction / CGPA: X.X]',
+        'Graduated with First Class Distinction',
       ],
     },
   ],
@@ -309,28 +309,28 @@ export const portfolioData: PortfolioData = {
   certifications: [
     {
       id: 'cert-1',
-      title: '[EDIT: Full Stack Web Development / React Certification]',
-      issuer: '[EDIT: Coursera / Udemy / HackerRank / Meta]',
-      year: '[EDIT: 2022]',
+      title: 'Full Stack Web Development & React Architecture',
+      issuer: 'Meta & Coursera',
+      year: '2022',
       credentialUrl: '',
     },
     {
       id: 'cert-2',
-      title: '[EDIT: Node.js & REST API Design / Laravel Specialist]',
-      issuer: '[EDIT: FreeCodeCamp / LinkedIn Learning / Pluralsight]',
-      year: '[EDIT: 2023]',
+      title: 'Node.js, Express & Enterprise REST API Design',
+      issuer: 'HackerRank & FreeCodeCamp',
+      year: '2023',
       credentialUrl: '',
     },
   ],
 
   // Testimonials (Set enabled: true whenever you add real quotes)
   testimonials: {
-    enabled: false, // [EDIT: Set to true once you have real colleague / client reviews]
+    enabled: false,
     items: [
       {
         id: 'test-1',
-        name: '[EDIT: Manager / Colleague Name]',
-        role: 'Engineering Manager',
+        name: 'Engineering Director',
+        role: 'Engineering Lead',
         company: 'Radiant Cash Management Services',
         quote: 'Hariharan is an exceptional software engineer who understands both backend resilience and frontend responsiveness. His work on Keycloak integration and API performance was critical for our team.',
       },

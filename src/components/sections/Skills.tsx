@@ -28,7 +28,6 @@ export const Skills: React.FC = () => {
 
   // Filter skills: only display confirmed ones as specified by the user!
   const confirmedSkills = portfolioData.skills.filter((skill) => skill.confirmed);
-  const unconfirmedCount = portfolioData.skills.filter((skill) => !skill.confirmed).length;
 
   // Grouped skills for the categorized card view
   const categoryGroups = [
@@ -167,20 +166,6 @@ export const Skills: React.FC = () => {
               );
             })}
         </div>
-
-        {/* Note on Additional Skills */}
-        {unconfirmedCount > 0 && (
-          <div className="mt-8 p-4 rounded-2xl bg-slate-100/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 text-center">
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-                [EDIT NOTE]
-              </span>
-              : {unconfirmedCount} additional candidate skills (e.g. Next.js, Docker, AWS, Redis, Jest) are configured in{' '}
-              <code className="text-emerald-500 font-mono">src/data/portfolio.ts</code>. Set{' '}
-              <code className="text-emerald-500 font-mono">confirmed: true</code> on any skill to instantly display it on your live portfolio.
-            </p>
-          </div>
-        )}
       </div>
     </section>
   );
