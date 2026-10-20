@@ -1,6 +1,6 @@
 /**
  * Dynamically calculates total years and months of professional experience
- * from March 2021 to the present date so the portfolio never goes stale.
+ * from a start date to an end date or present date so the portfolio never goes stale.
  */
 
 export interface ExperienceCalculation {
@@ -9,15 +9,18 @@ export interface ExperienceCalculation {
   totalMonths: number;
   formattedYears: string; // e.g. "5+ Years" or "5.5+ Years"
   fullLabel: string;      // e.g. "5+ Years Experience"
-  detailedText: string;   // e.g. "5 yrs 7 mos"
+  detailedText: string;   // e.g. "5 yrs 7 mos" or "6 mos"
 }
 
-export function calculateExperience(startDateStr: string = '2021-03-01'): ExperienceCalculation {
+export function calculateExperience(
+  startDateStr: string = '2021-03-01',
+  endDateStr?: string
+): ExperienceCalculation {
   const start = new Date(startDateStr);
-  const now = new Date();
+  const end = endDateStr ? new Date(endDateStr) : new Date();
 
-  let years = now.getFullYear() - start.getFullYear();
-  let months = now.getMonth() - start.getMonth();
+  let years = end.getFullYear() - start.getFullYear();
+  let months = end.getMonth() - start.getMonth();
 
   if (months < 0) {
     years -= 1;
@@ -28,8 +31,19 @@ export function calculateExperience(startDateStr: string = '2021-03-01'): Experi
 
   // Format cleanly: e.g., if > 0.5 round to .5 or clean integer with '+'
   let formattedYears = `${years}+ Years`;
-  if (months >= 6) {
+  if (years === 0) {
+    formattedYears = `${months} ${months === 1 ? 'Month' : 'Months'}`;
+  } else if (months >= 6) {
     formattedYears = `${years}.5+ Years`;
+  }
+
+  let detailedText = '';
+  if (years > 0 && months > 0) {
+    detailedText = `${years} yrs ${months} mos`;
+  } else if (years > 0) {
+    detailedText = `${years} yrs`;
+  } else {
+    detailedText = `${months} mos`;
   }
 
   return {
@@ -38,6 +52,6 @@ export function calculateExperience(startDateStr: string = '2021-03-01'): Experi
     totalMonths,
     formattedYears,
     fullLabel: `${formattedYears} Experience`,
-    detailedText: `${years} yrs ${months} mos`,
+    detailedText,
   };
 }

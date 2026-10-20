@@ -33,6 +33,7 @@ export interface ExperienceItem {
   location: string;
   startDate: string; // ISO date string or "YYYY-MM"
   endDate?: string;
+  periodLabel?: string;
   isCurrent: boolean;
   achievements: string[];
   techStack: string[];

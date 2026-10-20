@@ -10,31 +10,32 @@ import { PortfolioData } from '@/types/portfolio';
 export const portfolioData: PortfolioData = {
   personal: {
     name: 'Hariharan B',
-    role: 'Full Stack Software Engineer',
+    role: 'Developer II | Full Stack Software Engineer',
     // Rotating role lines for the Hero section
     typedRoles: [
+      'Developer II & POD Lead @ Metayb',
       'Full Stack Software Engineer',
-      'React.js & Frontend Architect',
-      'Node.js & Express Specialist',
-      'Laravel & PHP Backend Engineer',
-      'Scalable REST API Designer',
+      'React.js & Next.js Architect',
+      'Node.js & NestJS Backend Specialist',
+      'Scalable System & API Designer',
+      'AI-Assisted Engineering Practitioner',
     ],
     // High-impact recruiter-facing value pitch
-    tagline: 'I build secure, scalable web apps and high-throughput REST APIs for fintech and enterprise teams with clean architecture and production rigor.',
-    // Professional story for the About section (clean code, security, performance)
+    tagline: 'Developer II & Engineering POD Lead architecting scalable React, Next.js, and NestJS web applications, distributed APIs, and AI-assisted workflows for multi-domain enterprise platforms.',
+    // Professional story for the About section
     story: [
-      "I am a Full Stack Software Engineer with deep hands-on expertise building enterprise-grade web applications, secure authentication pipelines, and distributed APIs.",
-      "At Radiant Cash Management Services Ltd, I lead and collaborate on mission-critical financial software systems where uptime, transaction integrity, and sub-second latency are paramount.",
-      "My engineering philosophy centers on clean architecture, strict security standards (SSO, RBAC, OAuth2/JWT), continuous code quality with SonarQube, and database query optimization.",
-      "I am currently looking for high-impact engineering opportunities where I can solve complex architectural challenges and scale robust modern applications.",
+      "I am an experienced Full Stack Software Engineer and Developer II at Metayb Private Limited, leading a high-impact engineering POD across Product, Marketing, Finance, and Sales & Distribution domains.",
+      "Throughout my career—including over 5 years at Radiant Cash Management Services Ltd—I have owned end-to-end system architecture, building mission-critical fintech and enterprise platforms where latency, transaction integrity, and security are paramount.",
+      "I collaborate directly with cross-functional teams and international clients (including Nigeria), driving projects from discovery to production release using React, Next.js, TypeScript, Node.js, and NestJS.",
+      "My engineering approach combines clean modular architecture, AI-assisted development tools for rapid velocity, continuous code quality, and dedicated mentorship across engineering teams.",
     ],
-    location: 'Tirunelveli, Tamil Nadu, India',
+    location: 'Chennai / Tirunelveli, Tamil Nadu, India',
     relocationNote: '[EDIT: Open to Remote, Hybrid, & Relocation to Chennai / Bangalore / Hyderabad]',
     openToWork: true,
     availabilityStatus: 'Available for high-impact engineering opportunities',
     // Resume file path in the public folder
     resumeUrl: './Hariharan_B_Resume.pdf',
-    // Start date of professional career (March 2021) for automatic experience calculation
+    // Start date of professional career (March 2021) for automatic total experience calculation
     startDate: '2021-03-01',
   },
 
@@ -78,16 +79,21 @@ export const portfolioData: PortfolioData = {
   skills: [
     // --- Frontend ---
     { name: 'React.js', category: 'Frontend', confirmed: true, highlight: true },
+    { name: 'Next.js', category: 'Frontend', confirmed: true, highlight: true },
+    { name: 'TypeScript', category: 'Frontend', confirmed: true, highlight: true },
     { name: 'JavaScript (ES6+)', category: 'Frontend', confirmed: true, highlight: true },
     { name: 'HTML5', category: 'Frontend', confirmed: true },
     { name: 'CSS3', category: 'Frontend', confirmed: true },
     { name: 'Bootstrap', category: 'Frontend', confirmed: true },
+    { name: 'Tailwind CSS', category: 'Frontend', confirmed: true, highlight: false },
 
     // --- Backend ---
     { name: 'Node.js', category: 'Backend', confirmed: true, highlight: true },
+    { name: 'NestJS', category: 'Backend', confirmed: true, highlight: true },
     { name: 'Express.js', category: 'Backend', confirmed: true, highlight: true },
-    { name: 'PHP', category: 'Backend', confirmed: true },
     { name: 'Laravel', category: 'Backend', confirmed: true, highlight: true },
+    { name: 'PHP', category: 'Backend', confirmed: true },
+    { name: 'REST API Design', category: 'Backend', confirmed: true, highlight: true },
 
     // --- Databases ---
     { name: 'MySQL', category: 'Databases', confirmed: true, highlight: true },
@@ -96,35 +102,64 @@ export const portfolioData: PortfolioData = {
     // --- Security & Quality ---
     { name: 'Keycloak (SSO / RBAC)', category: 'Security & Quality', confirmed: true, highlight: true },
     { name: 'SonarQube', category: 'Security & Quality', confirmed: true, highlight: true },
+    { name: 'JWT & OAuth2', category: 'Security & Quality', confirmed: true },
 
-    // --- DevOps & Tools ---
+    // --- DevOps, AI & Tools ---
+    { name: 'AI-Assisted Engineering', category: 'DevOps & Tools', confirmed: true, highlight: true },
+    { name: 'System Architecture', category: 'DevOps & Tools', confirmed: true, highlight: true },
     { name: 'Git & GitHub', category: 'DevOps & Tools', confirmed: true },
+    { name: 'Postman API Testing', category: 'DevOps & Tools', confirmed: true },
 
     // =========================================================================
     // ADDITIONAL SKILLS (To display, change confirmed: false -> confirmed: true)
     // =========================================================================
-    { name: 'TypeScript', category: 'Frontend', confirmed: true, highlight: false }, // Set confirmed: false if not ready
-    { name: 'Next.js', category: 'Frontend', confirmed: false }, // [EDIT: Set true to display]
-    { name: 'Tailwind CSS', category: 'Frontend', confirmed: true, highlight: false },
-    { name: 'REST API Design', category: 'Backend', confirmed: true, highlight: true },
-    { name: 'JWT & OAuth2', category: 'Security & Quality', confirmed: true },
     { name: 'Docker', category: 'DevOps & Tools', confirmed: false }, // [EDIT: Set true to display]
     { name: 'CI/CD Pipelines', category: 'DevOps & Tools', confirmed: false }, // [EDIT: Set true to display]
     { name: 'AWS Cloud', category: 'DevOps & Tools', confirmed: false }, // [EDIT: Set true to display]
     { name: 'Redis Caching', category: 'Databases', confirmed: false }, // [EDIT: Set true to display]
     { name: 'Jest Unit Testing', category: 'Security & Quality', confirmed: false }, // [EDIT: Set true to display]
-    { name: 'Postman API Testing', category: 'DevOps & Tools', confirmed: true },
   ],
 
-  // Career experience timeline
+  // Career experience timeline (ordered newest to oldest)
   experiences: [
+    {
+      id: 'metayb-developer-ii',
+      role: 'Developer II',
+      company: 'Metayb Private Limited',
+      location: 'Chennai, Tamil Nadu, India',
+      startDate: '2026-05-01',
+      periodLabel: 'May 2026 – Present',
+      isCurrent: true,
+      achievements: [
+        'Lead a POD handling multiple projects simultaneously across Product, Marketing, Finance and Sales & Distribution domains, owning planning, delivery and quality.',
+        'Architect and build scalable web applications using React, Next.js, TypeScript, Node.js and NestJS.',
+        'Drive end-to-end project workflows with Business Analysts, UI/UX Designers, Product Managers and Engineering Managers, from requirements to release.',
+        'Engage directly with clients in Nigeria to gather requirements and deliver solutions aligned with their business needs.',
+        'Own system design and architecture decisions covering API structure, modularity, performance and security.',
+        'Apply AI engineering practices and AI-assisted development tools to speed up delivery and improve code quality.',
+        'Mentor engineers, run code reviews and enforce coding standards across the POD.',
+      ],
+      techStack: [
+        'React',
+        'Next.js',
+        'TypeScript',
+        'Node.js',
+        'NestJS',
+        'System Architecture',
+        'AI Engineering Tools',
+        'REST APIs',
+        'Agile POD Leadership',
+      ],
+    },
     {
       id: 'rcms-software-engineer',
       role: 'Software Engineer',
       company: 'Radiant Cash Management Services Ltd',
       location: 'Chennai, Tamil Nadu, India',
       startDate: '2021-03-01',
-      isCurrent: true,
+      endDate: '2026-05-01',
+      periodLabel: 'March 2021 – May 2026',
+      isCurrent: false,
       achievements: [
         'Built and maintained enterprise-grade RESTful APIs using Node.js/Express and Laravel serving [EDIT: 50,000+] active transaction operations daily.',
         'Developed modular React.js front-end dashboards that improved core page load performance and rendering speed by [EDIT: 38%].',

@@ -7,15 +7,13 @@ import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 
 export const Experience: React.FC = () => {
-  const dynamicExperience = calculateExperience(portfolioData.personal.startDate);
-
   return (
     <section id="experience" className="py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="// 03. CAREER TIMELINE"
-          title="Proven enterprise impact & engineering track record"
-          subtitle="Measurable results delivered in mission-critical fintech and cash management operations."
+          title="Proven engineering leadership & track record"
+          subtitle="From leading enterprise multi-domain PODs to fintech core systems, delivering resilient architectures."
         />
 
         <div className="relative border-l-2 border-emerald-500/30 dark:border-emerald-500/20 ml-4 md:ml-8 pl-6 md:pl-10 space-y-12">
@@ -48,10 +46,15 @@ export const Experience: React.FC = () => {
                   <div className="flex flex-col sm:items-end text-xs text-slate-500 dark:text-slate-400 gap-1 font-mono">
                     <div className="flex items-center gap-1.5">
                       <Calendar className="w-3.5 h-3.5 text-emerald-500" />
-                      <span>March 2021 – Present</span>
-                      <span className="text-emerald-500 font-semibold">
-                        ({dynamicExperience.detailedText} • {dynamicExperience.formattedYears})
-                      </span>
+                      <span>{exp.periodLabel}</span>
+                      {(() => {
+                        const duration = calculateExperience(exp.startDate, exp.endDate);
+                        return (
+                          <span className="text-emerald-500 font-semibold">
+                            ({duration.detailedText})
+                          </span>
+                        );
+                      })()}
                     </div>
                     <div className="flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-slate-400" />

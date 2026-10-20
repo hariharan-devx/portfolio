@@ -65,7 +65,7 @@ export const About: React.FC = () => {
                   {portfolioData.personal.name}
                 </h3>
                 <p className="text-xs font-mono text-emerald-400 mt-1">
-                  Full Stack Engineer • Radiant CMS
+                  {portfolioData.experiences[0]?.role} • {portfolioData.experiences[0]?.company}
                 </p>
 
                 {/* Location & Relocation note */}
